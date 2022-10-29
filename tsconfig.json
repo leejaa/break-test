@@ -24,7 +24,7 @@
         "strict": false,
         "target": "es5",
         "paths": {
-            "@break-ui/*": ["./packages/break-ui/*"]
+            "break-ui/*": ["./packages/break-ui/*"]
         }
     },
     "include": [
