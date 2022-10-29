@@ -5,9 +5,7 @@
     "types": "./index.ts",
     "license": "MIT",
     "devDependencies": {
-        "eslint": "^7.32.0",
         "eslint-config-custom": "*",
-        "tsconfig": "*",
-        "typescript": "latest"
+        "tsconfig": "*"
     }
 }
