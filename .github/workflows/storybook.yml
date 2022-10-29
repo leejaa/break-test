@@ -11,7 +11,20 @@ on:
 
 jobs:
   deploy:
-    uses: ./.github/workflows/common.yml
-    secrets:
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
+    name: "vercel 에 배포"
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Vercel CLI 설치
+        run: npm install --global vercel@latest
+      - name: 프로젝트를 Vercel에 배포
+        run: vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+      # - name: 릴리즈노트 작성
+      #   run: |
+      #     curl \
+      #       -X POST \
+      #       -H "Accept: application/vnd.github+json" \
+      #       -H "Authorization: Bearer ${{ secrets.GIT_TOKEN }}" \
+      #       https://api.github.com/repos/leejaa/brg-test/releases \
+      #       -d '{"tag_name":"v1.0.0","target_commitish":"master","name":"v1.0.0","body":"Description of the release","draft":false,"prerelease":false,"generate_release_notes":false}'
