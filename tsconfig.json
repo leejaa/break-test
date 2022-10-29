@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Next.js",
+    "compilerOptions": {
+        "composite": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSources": false,
+        "isolatedModules": true,
+        "moduleResolution": "node",
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "preserveWatchOutput": true,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "declaration": false,
+        "declarationMap": false,
+        "incremental": true,
+        "jsx": "preserve",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "module": "esnext",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "strict": false,
+        "target": "es5",
+        "paths": {
+            "@break-ui/*": ["./packages/break-ui/*"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.d.ts",
+        "**/*.tsx"
+    ],
+    "exclude": ["node_modules"]
+  }
+  
