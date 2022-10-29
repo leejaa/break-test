@@ -24,7 +24,8 @@
         "strict": false,
         "target": "es5",
         "paths": {
-            "@break-ui/*": ["./packages/break-ui/*"]
+            "break-ui/*": ["./packages/break-ui/*"],
+            "break-utils/*": ["./packages/break-utils/*"]
         }
     },
     "include": [
@@ -33,6 +34,6 @@
         "**/*.d.ts",
         "**/*.tsx"
     ],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "**/*.stories.tsx"]
   }
   
