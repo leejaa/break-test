@@ -1,10 +1,10 @@
-import { Button, TextField } from "@mui/material";
-import { Button as ButtonComponent } from "break-ui/components";
-import { useState } from "react";
-import usePatchMockMutation from "specifics/mocking/utils/apiHooks/usePatchMockMutation";
-import usePostMockMutation from "specifics/mocking/utils/apiHooks/usePostMockMutation";
-import useDeleteMockMutation from "../specifics/mocking/utils/apiHooks/useDeleteMockMutation";
-import useGetMockQuery from "../specifics/mocking/utils/apiHooks/useGetMockQuery";
+import { Button, TextField } from '@mui/material';
+import { Button as ButtonComponent } from 'break-ui/components';
+import { useState } from 'react';
+import usePatchMockMutation from 'specifics/mocking/utils/apiHooks/usePatchMockMutation';
+import usePostMockMutation from 'specifics/mocking/utils/apiHooks/usePostMockMutation';
+import useDeleteMockMutation from '../specifics/mocking/utils/apiHooks/useDeleteMockMutation';
+import useGetMockQuery from '../specifics/mocking/utils/apiHooks/useGetMockQuery';
 
 export default function Break() {
   const { data } = useGetMockQuery();
@@ -12,15 +12,15 @@ export default function Break() {
   const { mutate: deleteMutate } = useDeleteMockMutation();
   const { mutate: updateMutate } = usePatchMockMutation();
 
-  const [deleteId, setDeleteId] = useState("");
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
+  const [deleteId, setDeleteId] = useState('');
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [gender, setGender] = useState('');
 
-  const [updateId, setUpdateId] = useState("");
-  const [updateName, setUpdateName] = useState("");
-  const [updateAge, setUpdateAge] = useState("");
-  const [updateGender, setUpdateGender] = useState("");
+  const [updateId, setUpdateId] = useState('');
+  const [updateName, setUpdateName] = useState('');
+  const [updateAge, setUpdateAge] = useState('');
+  const [updateGender, setUpdateGender] = useState('');
 
   const handleChangeId = (event: any) => {
     setDeleteId(event.target.value);
