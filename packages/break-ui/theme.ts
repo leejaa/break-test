@@ -14,8 +14,8 @@ const theme = createTheme({
       main: red.A400,
     },
     neutral: {
-        main: '#64748B',
-        contrastText: '#fff',
+      main: '#64748B',
+      contrastText: '#fff',
     },
   },
 });

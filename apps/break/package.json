@@ -11,9 +11,5 @@
   "dependencies": {
     "break-ui": "*",
     "break-utils": "*"
-  },
-  "devDependencies": {
-    "eslint-config-custom": "*",
-    "tsconfig": "*"
   }
 }
