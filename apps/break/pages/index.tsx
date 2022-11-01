@@ -1,10 +1,10 @@
 import { Button, TextField } from '@mui/material';
 import { Button as ButtonComponent } from 'break-ui/components';
 import { useState } from 'react';
+import useDeleteMockMutation from 'specifics/mocking/utils/apiHooks/useDeleteMockMutation';
+import useGetMockQuery from 'specifics/mocking/utils/apiHooks/useGetMockQuery';
 import usePatchMockMutation from 'specifics/mocking/utils/apiHooks/usePatchMockMutation';
 import usePostMockMutation from 'specifics/mocking/utils/apiHooks/usePostMockMutation';
-import useDeleteMockMutation from '../specifics/mocking/utils/apiHooks/useDeleteMockMutation';
-import useGetMockQuery from '../specifics/mocking/utils/apiHooks/useGetMockQuery';
 
 export default function Break() {
   const { data } = useGetMockQuery();
