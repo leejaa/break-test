@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Header from './Header';
+import SearchHeader from './SearchHeader';
 
 export default {
   title: 'Header',
@@ -10,3 +11,7 @@ export default {
 export const HeaderWithIconButtons: ComponentStory<typeof Header> = (args) => (
   <Header {...args} />
 );
+
+export const HeaderWithSearchInput: ComponentStory<typeof SearchHeader> = (
+  args,
+) => <SearchHeader {...args} />;

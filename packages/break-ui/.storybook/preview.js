@@ -29,6 +29,7 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports, defaultViewport: 'Mobile_360' },
+  layout: 'fullscreen'
 }
 
 export const decorators = [

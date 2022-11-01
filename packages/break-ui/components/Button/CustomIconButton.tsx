@@ -1,13 +1,9 @@
 import { ButtonProps } from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import { SxProps } from '@mui/material/styles';
 
-interface CustomIconButtonProps extends ButtonProps {
-  buttonType?: string;
-  sx?: SxProps;
-}
+interface CustomIconButtonProps extends ButtonProps {}
 
-function CustomIconButton({ children, ...rest }: CustomIconButtonProps) {
+function CustomIconButton({ children }: CustomIconButtonProps) {
   return <IconButton sx={{ padding: '0px' }}>{children}</IconButton>;
 }
 
