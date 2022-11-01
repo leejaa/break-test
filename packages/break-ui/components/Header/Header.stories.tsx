@@ -7,6 +7,6 @@ export default {
   component: Header,
 } as ComponentMeta<typeof Header>;
 
-export const Default: ComponentStory<typeof Header> = (args) => (
+export const HeaderWithIconButtons: ComponentStory<typeof Header> = (args) => (
   <Header {...args} />
 );
