@@ -1,12 +1,12 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Button from "./Button";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import TextButton from './TextButton';
 
 export default {
-  title: "Button",
-  component: Button,
-} as ComponentMeta<typeof Button>;
+  title: 'Button',
+  component: TextButton,
+} as ComponentMeta<typeof TextButton>;
 
-export const Default: ComponentStory<typeof Button> = (args) => (
-  <Button {...args} />
+export const ButtonWithText: ComponentStory<typeof TextButton> = (args) => (
+  <TextButton {...args}>Text Button</TextButton>
 );
