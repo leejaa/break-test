@@ -2,7 +2,7 @@ import Button, { ButtonProps } from '@mui/material/Button';
 
 interface TextButtonProps extends ButtonProps {}
 
-function TextButton({ children }: TextButtonProps) {
+function TextButton({ children, ...rest }: TextButtonProps) {
   return (
     <Button
       sx={{
@@ -11,6 +11,7 @@ function TextButton({ children }: TextButtonProps) {
           background: 'none',
         },
       }}
+      {...rest}
     >
       {children}
     </Button>
