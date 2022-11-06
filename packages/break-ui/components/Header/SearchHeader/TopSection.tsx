@@ -1,16 +1,17 @@
-import HeaderWrapper from 'break-ui/components/Header/HeaderWrapper';
+import { Box } from '@mui/material';
 import LogoSection from 'break-ui/components/Header/LogoSection';
 import TextButtonSection from 'break-ui/components/Header/TextButtonSection';
+import { HStack } from 'break-ui/components/HStack';
 
-interface SearchHeaderProps {}
+interface TopSectionProps {}
 
-function SearchHeader() {
+function TopSection() {
   return (
-    <HeaderWrapper>
+    <HStack width={1}>
       <LogoSection />
       <TextButtonSection />
-    </HeaderWrapper>
+    </HStack>
   );
 }
 
-export default SearchHeader;
+export default TopSection;

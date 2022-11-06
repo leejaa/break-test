@@ -29,7 +29,7 @@ function CustomInput(props: CustomInputProps) {
         backgroundColor: '#252525',
         borderRadius: '5px',
         '&.MuiInput-root': {
-          padding: '12.5px 13.5px',
+          padding: '10px 12px',
           ':before': {
             borderBottom: 'none',
           },
@@ -47,6 +47,7 @@ function CustomInput(props: CustomInputProps) {
               color: colors.grey[500],
             },
             color: colors.grey[500],
+            padding: '0px',
           },
         },
       }}

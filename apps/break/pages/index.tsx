@@ -1,5 +1,5 @@
 import { Button, TextField } from '@mui/material';
-import { Button as ButtonComponent } from 'break-ui/components';
+import { TextButton as ButtonComponent } from 'break-ui/components';
 import { useState } from 'react';
 import useDeleteMockMutation from 'specifics/mocking/utils/apiHooks/useDeleteMockMutation';
 import useGetMockQuery from 'specifics/mocking/utils/apiHooks/useGetMockQuery';
