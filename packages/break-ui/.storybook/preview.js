@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "break-ui/theme";
+import colors from "../styles/colors";
 
 // .storybook/preview.js
 
@@ -35,7 +36,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-      <div style={{ maxWidth: '500px' }}>
+      <div style={{ maxWidth: '500px', backgroundColor: colors.black }}>
         <Story />
       </div>
     </ThemeProvider>
