@@ -9,6 +9,7 @@ const ENV_SCRIPT_INFO = {
     PROJECT_NAME: 'break',
     PROJECT_ID: 'prj_j3r9kPVWXgHqAT11wmz9qRcl2QLA',
   },
+  API_END_POINT: 'https://api.vercel.com/v9/projects',
 };
 
 let PROJECT_ID = '';
@@ -49,8 +50,8 @@ execute();
 async function getEnvList() {
   const config = {
     method: 'get',
-    // url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env?teamId=${TEAM_ID}`,
-    url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env`,
+    // url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env?teamId=${TEAM_ID}`,
+    url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env`,
     headers: {
       Authorization: `Bearer ${ENV_SCRIPT_INFO.VERCEL_TOKEN}`,
       'Content-Type': 'application/json',
@@ -97,8 +98,8 @@ async function addEnv() {
 
   const config = {
     method: 'post',
-    // url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env?teamId=${TEAM_ID}`,
-    url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env`,
+    // url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env?teamId=${TEAM_ID}`,
+    url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env`,
     headers: {
       Authorization: `Bearer ${ENV_SCRIPT_INFO.VERCEL_TOKEN}`,
       'Content-Type': 'application/json',
@@ -153,8 +154,8 @@ async function editEnv() {
 
   const config = {
     method: 'patch',
-    // url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env/${id}?teamId=${TEAM_ID}`,
-    url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env/${id}`,
+    // url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env/${id}?teamId=${TEAM_ID}`,
+    url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env/${id}`,
     headers: {
       Authorization: `Bearer ${ENV_SCRIPT_INFO.VERCEL_TOKEN}`,
       'Content-Type': 'application/json',
@@ -209,8 +210,8 @@ async function deleteEnv() {
 
   const config = {
     method: 'delete',
-    // url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env/${id}?teamId=${TEAM_ID}`,
-    url: `https://api.vercel.com/v9/projects/${PROJECT_ID}/env/${id}`,
+    // url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env/${id}?teamId=${TEAM_ID}`,
+    url: `${ENV_SCRIPT_INFO.API_END_POINT}/${PROJECT_ID}/env/${id}`,
     headers: {
       Authorization: `Bearer ${ENV_SCRIPT_INFO.VERCEL_TOKEN}`,
       'Content-Type': 'application/json',

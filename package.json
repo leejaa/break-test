@@ -9,11 +9,11 @@
     "dev": "turbo run dev --filter break",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "env-add": "node scripts/env.ts add",
-    "env-edit": "node scripts/env.ts edit",
-    "env-get": "node scripts/env.ts get",
-    "env-delete": "node scripts/env.ts delete",
-    "env-pull": "node scripts/env.ts pull"
+    "env-add": "node scripts/env.js add",
+    "env-edit": "node scripts/env.js edit",
+    "env-get": "node scripts/env.js get",
+    "env-delete": "node scripts/env.js delete",
+    "env-pull": "node scripts/env.js pull"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.13",

@@ -33,7 +33,7 @@
         "**/*.ts",
         "**/*.d.ts",
         "**/*.tsx"
-    ],
+, "scripts/env.js"    ],
     "exclude": ["node_modules", "**/*.stories.tsx"]
   }
   

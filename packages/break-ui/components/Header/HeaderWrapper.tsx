@@ -6,7 +6,6 @@ interface HeaderWrapperProps extends BoxProps {}
 function HeaderWrapper({ children }: HeaderWrapperProps) {
   return (
     <Box
-      display="flex"
       padding="10px 20px"
       sx={{
         backgroundColor: colors.black,

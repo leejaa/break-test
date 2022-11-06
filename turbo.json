@@ -1,6 +1,6 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": ["$VERCEL_TOKEN"],
+  "globalDependencies": ["$VERCEL_TOKEN", "$NOTION_TOKEN", "$NOTION_DATABASE_ID", "$PAGE_ID", "$NOTION_VERSION"],
   "pipeline": {
     "build": {
       "outputs": [".next/**"]
